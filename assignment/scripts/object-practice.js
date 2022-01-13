@@ -25,16 +25,26 @@ console.log('A little about me:', me);
   - Console.log fullName
 */
 
-// object notation requres quotations.. interesting!
-let fullName = me['firstName'] + ' ' + me['lastName'];
-console.log(fullName); // logs ma name
+// sooooo, I kinda totally forgot about the dot, and realized on question three,
+// techniaclly what I did below worked, I got the idea to use quotes from accessing
+// the object in the console. I imagine though this is more what youre looking for..
+let fullName = me.firstName + ' ' + me.lastName;
+console.log(fullName); // still logs ma name
+
+/* |                      |
+   |         BIG          |
+   V        oopsie        V
+//  object notation requres quotations.. interesting
+// let fullName = me['firstName'] + ' ' + me['lastName'];
+// console.log(fullName); // logs ma name
 
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food
 */
 //two logs with one console!
-console.log(me['favThreeFoods[0]'], me['favThreeFoods[2]']);
+// I almost forgot about the dot !!
+console.log(me.favThreeFoods[0])
 
 
 /* 4. Change a property of an existing object.
