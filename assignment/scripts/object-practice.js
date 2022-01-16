@@ -13,7 +13,8 @@ const me = {
   firstName: 'Koffi', // how do I comment that this is my first name?
   lastName: 'Kittleson', // last name...
   hasSiblings: 5, // 4 brothers and 1 sister
-  shoeCount: `${3} pairs`, // I just dont throw out my old ones when I get new ones
+  shoeCount: 3, // the less cool version of the one below...
+  shoeCounte: `${3} pairs`, // I just dont throw out my old ones when I get new ones
   favThreeFoods: ['Ramen', 'Pizza', 'Burritos'] // Burritos is last, but no where near least
 };
 console.log('A little about me:', me);
@@ -44,7 +45,7 @@ console.log(fullName); // still logs ma name
 */
 //two logs with one console!
 // I almost forgot about the dot !!
-console.log(me.favThreeFoods[0])
+console.log(me.favThreeFoods[0], me.favThreeFoods[me.favThreeFoods.length -1])
 
 
 /* 4. Change a property of an existing object.
@@ -54,6 +55,20 @@ console.log(me.favThreeFoods[0])
   - Console.log your updated shoe count.
 */
 
+console.log(me.shoeCount);
+me.shoeCount += 1; // you shouldnt have!
+console.log(me.shoeCount);
+
+
+// Will consider trying to make the cooler version work 1/13
+// console.log(me.shoeCount);
+// me.shoeCounte += 1; // for me!?!
+// console.log(me.shoeCount);
+
+// this techniaclly works but its doesnt demonstrate how math can be done on property values :/
+console.log(me.shoeCounte);
+me.shoeCounte = `${4} pairs`; // for me!?!
+console.log(me.shoeCounte);
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -61,3 +76,6 @@ console.log(me.favThreeFoods[0])
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+
+me.favoriteColor = 'purple';
+console.log(me); //wowie
